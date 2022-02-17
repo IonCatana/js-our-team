@@ -30,3 +30,25 @@ const team = [
     image: 'barbara-ramos-graphic-designer.jpg',
   },
 ];
+
+console.log(team);
+
+//Creare le variabili
+const teamContainer = document.querySelector('.team-container'); // Seleziono la classe team-container
+console.log(teamContainer);
+
+//Creare il ciclo
+for (let i = 0; i < team.length; i++) {
+  const card = (teamContainer.innerHTML += ` 
+  <div class="team-card">
+      <div class="card-image">
+        <img src="img/${team[i].image}" alt="" />
+      </div>
+      <div class="card-text">
+        <h3>${team[i].name}</h3>
+        <p>${team[i].role}</p>
+      </div>
+    </div>`);
+  console.log(team[i]);
+}
+
