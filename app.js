@@ -42,7 +42,7 @@ for (let i = 0; i < team.length; i++) {
   const card = (teamContainer.innerHTML += ` 
   <div class="team-card">
       <div class="card-image">
-        <img src="img/${team[i].image}" alt="" />
+        <img src="img/${team[i].image}" alt="image" />
       </div>
       <div class="card-text">
         <h3>${team[i].name}</h3>
@@ -51,4 +51,3 @@ for (let i = 0; i < team.length; i++) {
     </div>`);
   console.log(team[i]);
 }
-
